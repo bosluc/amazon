@@ -10,7 +10,7 @@ ${result}
 *** Test Cases ***
 Open Google    [Documentation]  open Google
     Open Browser  http:/www.google.com  chrome
-    Wait Until Page Contains  Gogle
+    Wait Until Page Contains  Google
     Close Browser
 #    ${result}=    Run keyword and ignore error  Element should be visible   css=span.cookie-policy-button-text
 #    Run keyword if    '${result[0]}' == 'PASS'  click element    class=cookie-policy-button-text
